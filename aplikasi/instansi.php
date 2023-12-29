@@ -124,6 +124,16 @@ include 'konek.php';
                             // Menambahkan nilai $no untuk nomor urutan pada setiap iterasi perulangan.
                             $no++;
                         }
+
+                        interface toyota {
+                            public function Query($kelas);
+                        }
+                        class mobil extends Database{
+                            private $harga;
+                            public $warna;
+
+                        }
+                        // mungkin cuman ini saya bisa, untuk menjalankan aplikasinya saya tidak bisa pak
                         ?>
 
                     </tbody>

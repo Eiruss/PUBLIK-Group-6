@@ -87,6 +87,25 @@ include 'konek.php';
                                 return $query;
                             }
                         }
+
+                        Class Tertib extends Database
+                        {
+                            public function __construct(){
+                                parent::__construct();
+                            }
+                            public function getAllTertib(){
+                                $konek=$this->getKonek();
+                                $query = mysqli_query($konek, "SELECT * FROM tb_pengaduan WHERE id >=1");
+                                return $query;
+                            }
+                        }
+
+                        $tertib = new Tertib();
+
+                        $sql = $tertib->getAllTertib();
+
+                        $tata = new Tertib();
+                        $sql  = $tata-> getAllTertib();
                         
                         $pengaduan = new Pengaduan();
                         
